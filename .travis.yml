@@ -4,3 +4,9 @@ python:
 - '3.4'
 - '3.5'
 - '3.6'
+install: 
+  - pip install coveralls
+script:
+  coverage run --source=liquid test.py
+after_success:
+  coveralls
