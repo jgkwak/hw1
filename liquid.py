@@ -13,6 +13,7 @@ class drinks:
 		elif(self._size == "M" or self._size == "m" ):
 			return 3.00
 		elif(self._size == "L" or self._size == "l" ):
+			return 3.50
 		else:
 			return 0
 
@@ -31,9 +32,9 @@ class boba(drinks):
 
 	def price(self):
 		base_price = super().price()
-		if(self._topping)>=0)
+		if(self._topping>=0):
 			return float(base_price + (self._topping*.75))
-		else
+		else:
 			return base_price
 
 	def report(self):
